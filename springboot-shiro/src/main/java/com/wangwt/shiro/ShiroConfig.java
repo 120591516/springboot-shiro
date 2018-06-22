@@ -36,6 +36,7 @@ public class ShiroConfig {
         Map<String,String> filter = new LinkedHashMap<>();
         //设置不需要验证的页面
         filter.put("/login","anon");
+        filter.put("/login","anon");
         filter.put("/thymeleaf","anon");
         //设置需要验证的页面
         filter.put("/user/**","authc");
